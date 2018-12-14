@@ -27,7 +27,6 @@ Create a file named `.github/pr-release-bot.yml` with your configuration:
 |`releaseLabel`|`string`| A label that **pr-release-bot** will add to the pull request indicating that it will be released once merged. |`'pr-release: release {version} :shipit:'`|
 |`noReleaseLabel`|`string`| A label that **pr-release-bot** will add to the pull request indicating that it will **NOT** be released once merged. |`'pr-release: won't release'`|
 
-
 ### Plans
 
 Below are a few upcoming features I have in mind for this bot. Feel free to add comments or reactions to the respective issues, or create your own requests. 
