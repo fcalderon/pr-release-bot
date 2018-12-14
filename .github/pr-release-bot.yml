@@ -1,3 +1,6 @@
 releaseTargetBranch: master
 commentOnReleasablePR: true
-labelsToIgnore: ["don't release", "Don't release", "dont_release"]
+labelsToIgnore: ["pr-release: don't release"]
+releaseName: "PR Release Bot Release {version}"
+releaseLabel: "pr-release: release"
+noReleaseLabel: "pr-release: won't release"
