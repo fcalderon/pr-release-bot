@@ -17,6 +17,8 @@ When you create Pull Request against your `releaseTargetBranch`, e.g. `master`, 
 
 ### Available Options
 
+Create a file named `.github/pr-release-bot.yml` with your configuration:
+
 | Name | Type | Description | Default |
 |------|------|-------------|---------|
 |`releaseTargetBranch`|`string`|The target branch against which releases are made.|`'master'`|
