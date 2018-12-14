@@ -1,5 +1,6 @@
 const RELEASE_TARGET_BRANCH = 'master'
 const NO_RELEASE_LABEL = 'don\'t release'
+const CONFIG_FILE_NAME = 'pr-release-bot.yml'
 
 function getCreateReleaseBody (context, releaseInfo) {
   const { owner, repo } = context.repo()
@@ -29,6 +30,9 @@ module.exports = app => {
     const { github, payload } = context
     // console.log('pull_request: Got github: ', github)
 
+    const config = context.config(CONFIG_FILE_NAME)
+    console.log('Config file: ', config)
+
     if (payload.pull_request) {
       const pr = payload.pull_request
 
@@ -39,7 +43,7 @@ module.exports = app => {
 
       const releaseInfo = {
         name: 'A name',
-        body: 'A body',
+        body: pr.body,
         tag: 'a-tag',
         target: 'target',
         isDraft: false,
@@ -53,6 +57,7 @@ module.exports = app => {
         }
       }
 
+      console.log('Payload action', payload.action)
       console.log('Received pull request ', payload.number)
       console.log('Title:', payload.pull_request.title)
       console.log('Is Release PR?:', isReleasePR)
@@ -60,7 +65,6 @@ module.exports = app => {
       console.log('Is Allowed to be released?', canBeReleased)
       console.log('Contains no release label?', containsNoReleaseLabel)
       console.log('Release: ', JSON.stringify(getCreateReleaseBody(context, releaseInfo)))
-
 
     }
 

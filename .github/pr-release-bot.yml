@@ -1,0 +1,3 @@
+releaseTargetBranch: master
+commentOnReleasablePR: true
+labelsToIgnore: ["don't release", "Don't release", "dont_release"]
