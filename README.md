@@ -2,6 +2,44 @@
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that creates releases based on PR name patterns and PR tags
 
+## Usage
+
+Simple and straight forward bot. Built to satisfy my needs and workflow so it's a bit opinionated. If you use gitflow (or something like it)
+then this bot can be useful.
+
+When you create Pull Request against your `releaseTargetBranch`, e.g. `master`, and merge it, this bot will create a release using the body of the pull request as the body of the release.
+
+### How does it work
+
+1. The bot will try to deduce the version (semver) of the release from the pull request's name.
+2. If the bot is able to get the version from the pull request name, it's good to go.
+3. Once the pull request is merged, the bot will use the deduced version as the tag, as well as the body of the pull request, to create the GitHub release. 
+
+### Available Options
+
+| Name | Type | Description | Default |
+|------|------|-------------|---------|
+|`releaseTargetBranch`|`string`|The target branch against which releases are made.|`'master'`|
+|`labelsToIgnore`|`string[]`|A list of labels which if present on the PR will tell the bot NOT to create a release.|`['pr-release: don't release']`|
+|`releaseName`|`string`| The string to use to generate the release name. Use the `{version}` keyword so **pr-release-bot** can insert the version. |`'PR Release Bot Release {version}'`|
+|`releaseLabel`|`string`| A label that **pr-release-bot** will add to the pull request indicating that it will be released once merged. |`'pr-release: release {version} :shipit:'`|
+|`noReleaseLabel`|`string`| A label that **pr-release-bot** will add to the pull request indicating that it will **NOT** be released once merged. |`'pr-release: won't release'`|
+
+
+### Plans
+
+These are a few upcoming features I have in mind for this bot: 
+
+* Add the ability to disable comments
+* Add the ability to add a RegEx pattern to determine whether a pull request should be released
+* Add the ability to have different detection strategies (e.g. a branch name, regex pattern against branch names or pull request title, pull request label, etc.)
+* Make the bot smarter by detecting accidental duplicated release versions, or a accidental downgrades (e.g. 1.1.0 -> 1.0.0)
+* Block merging the pull request if it should be released but some information is missing (e.g. version name)
+
+### Tests
+
+Although I am planning on doing so, I haven't added any tests to this yet. Use at your own risk.  
+
 ## Setup
 
 ```sh
