@@ -1,6 +1,6 @@
 # release-bot
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that Bot to help create releases based on PR name patterns and PR tags
+> A GitHub App built with [Probot](https://github.com/probot/probot) that creates releases based on PR name patterns and PR tags
 
 ## Setup
 
