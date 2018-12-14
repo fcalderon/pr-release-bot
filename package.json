@@ -1,6 +1,6 @@
 {
   "name": "release-bot",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "description": "Bot to help create releases based on PR name patterns and PR tags",
   "author": "Francisco Calderon <fjavier5152@gmail.com>",
   "license": "ISC",
@@ -10,7 +10,9 @@
   "keywords": [
     "probot",
     "github",
-    "probot-app"
+    "probot-app",
+    "pr-release-bot",
+    "pr-release"
   ],
   "scripts": {
     "dev": "nodemon",
