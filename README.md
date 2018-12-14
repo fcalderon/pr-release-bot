@@ -11,7 +11,7 @@ When you create Pull Request against your `releaseTargetBranch`, e.g. `master`, 
 
 ### How does it work
 
-1. The bot will try to deduce the version (semver) of the release from the pull request's name.
+1. The bot will try to deduce the version (semver) of the release from the pull request's name (e.g. `Release v1.0.0`).
 2. If the bot is able to get the version from the pull request name, it's good to go.
 3. Once the pull request is merged, the bot will use the deduced version as the tag, as well as the body of the pull request, to create the GitHub release. 
 
