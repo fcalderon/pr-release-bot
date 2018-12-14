@@ -1,4 +1,4 @@
-# Pull Request Release Bot [pr-release-bot](https://github.com/settings/apps/pr-release-bot)
+# Pull Request Release Bot [pr-release-bot](https://github.com/apps/pr-release-bot)
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that creates releases based on PR name patterns and PR tags
 
