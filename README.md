@@ -28,18 +28,18 @@ When you create Pull Request against your `releaseTargetBranch`, e.g. `master`, 
 
 ### Plans
 
-These are a few upcoming features I have in mind for this bot: 
+Below are a few upcoming features I have in mind for this bot. Feel free to add comments or reactions to the respective issues, or create your own requests. 
 
-* Add the ability to disable comments (#11)
-* Add the ability to add a RegEx pattern to determine whether a pull request should be released (#12)
-* Add the ability to have different detection strategies (e.g. a branch name, regex pattern against branch names or pull request title, pull request label, etc.)(#13)
-* Make the bot smarter by detecting accidental duplicated release versions, or a accidental downgrades (e.g. 1.1.0 -> 1.0.0) (#14)
-* Block merging the pull request if it should be released but some information is missing (e.g. version name) (#15)
-* Add colors to labels (#8)
+* Add the ability to disable comments ([#11](https://github.com/fcalderon/pr-release-bot/issues/11))
+* Add the ability to add a RegEx pattern to determine whether a pull request should be released ([#12](https://github.com/fcalderon/pr-release-bot/issues/12))
+* Add the ability to have different detection strategies (e.g. a branch name, regex pattern against branch names or pull request title, pull request label, etc.)([#13](https://github.com/fcalderon/pr-release-bot/issues/13))
+* Make the bot smarter by detecting accidental duplicated release versions, or a accidental downgrades (e.g. 1.1.0 -> 1.0.0) ([#14](https://github.com/fcalderon/pr-release-bot/issues/14))
+* Block merging the pull request if it should be released but some information is missing (e.g. version name) ([#15](https://github.com/fcalderon/pr-release-bot/issues/15))
+* Add colors to labels ([#8](https://github.com/fcalderon/pr-release-bot/issues/8))
 
 ### Tests
 
-Although I am planning on doing so (#7), I haven't added any tests to this yet. Use at your own risk.  
+Although I am planning on doing so ([#7](https://github.com/fcalderon/pr-release-bot/issues/7)), I haven't added any tests to this yet. Use at your own risk.  
 
 ## Setup
 
