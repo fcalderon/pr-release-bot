@@ -32,6 +32,7 @@ Create a file named `.github/pr-release-bot.yml` with your configuration:
 
 Below are a few upcoming features I have in mind for this bot. Feel free to add comments or reactions to the respective issues, or create your own requests. 
 
+* List App in Probot's site (need tests first)
 * Add the ability to disable comments ([#11](https://github.com/fcalderon/pr-release-bot/issues/11))
 * Add the ability to add a RegEx pattern to determine whether a pull request should be released ([#12](https://github.com/fcalderon/pr-release-bot/issues/12))
 * Add the ability to have different detection strategies (e.g. a branch name, regex pattern against branch names or pull request title, pull request label, etc.)([#13](https://github.com/fcalderon/pr-release-bot/issues/13))
