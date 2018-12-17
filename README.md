@@ -66,4 +66,4 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 
-[ISC](LICENSE) © 2018 Francisco Calderon <fjavier5152@gmail.com>
+[MIT](LICENSE) © 2018 Francisco Calderon <fjavier5152@gmail.com>
