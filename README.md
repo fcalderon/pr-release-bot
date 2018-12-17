@@ -39,6 +39,10 @@ Below are a few upcoming features I have in mind for this bot. Feel free to add 
 * Make the bot smarter by detecting accidental duplicated release versions, or a accidental downgrades (e.g. 1.1.0 -> 1.0.0) ([#14](https://github.com/fcalderon/pr-release-bot/issues/14))
 * Block merging the pull request if it should be released but some information is missing (e.g. version name) ([#15](https://github.com/fcalderon/pr-release-bot/issues/15))
 * Add colors to labels ([#8](https://github.com/fcalderon/pr-release-bot/issues/8))
+* Create a draft of the release when the pull request is created so the user can preview how the release looks
+* Add ability to disable the bot all together without un-installing
+* Use Pro-Bot's [persistence API](https://probot.github.io/docs/persistence/)
+
 
 ### Tests
 
