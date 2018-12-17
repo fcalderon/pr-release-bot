@@ -42,6 +42,7 @@ Below are a few upcoming features I have in mind for this bot. Feel free to add 
 * Create a draft of the release when the pull request is created so the user can preview how the release looks
 * Add ability to disable the bot all together without un-installing
 * Use Pro-Bot's [persistence API](https://probot.github.io/docs/persistence/)
+* Add support for pre-releases
 
 
 ### Tests
